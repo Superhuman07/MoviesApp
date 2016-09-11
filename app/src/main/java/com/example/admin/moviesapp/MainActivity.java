@@ -13,9 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // checks net connections
+        // Checks net connections from the class object isOnline 
         IsOnline isOnline = new IsOnline();
-
+        
+        // Send appropriate message toast to the user about the network connection
         if (isOnline.isNetworkStatusAvailable(this))
         {
             Toast.makeText(this, "Internet is connected",Toast.LENGTH_LONG).show();
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         else
         {
             Toast.makeText(this, "Internet is not connected",Toast.LENGTH_LONG).show();
+            // Not connected to internet shut the app down
             finish();
         }
 
