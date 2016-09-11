@@ -8,7 +8,7 @@ import android.net.NetworkInfo;
  * Created by Admin on 05-02-2016.
  */
  
- // Check whether the user is online or not
+// Check whether the user is online or not
 public class IsOnline {
     public static boolean isNetworkStatusAvailable (Context context) {
         
