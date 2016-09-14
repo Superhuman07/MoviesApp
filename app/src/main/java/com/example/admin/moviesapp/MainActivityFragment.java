@@ -37,12 +37,15 @@ import java.util.Comparator;
 
 
 public class MainActivityFragment extends Fragment {
+    
+    // An array list for movies from movie items
     ArrayList<MovieItem> movies;
+    // An array adapter for listing movie list
     MovieListAdapter movieItemArrayAdapter;
 
 
     public MainActivityFragment(){}
-    // custom array adapter
+    // A Custom array adapter for containing poster images of movies 
     public class MovieListAdapter extends ArrayAdapter<MovieItem>
     {
         Context context;
