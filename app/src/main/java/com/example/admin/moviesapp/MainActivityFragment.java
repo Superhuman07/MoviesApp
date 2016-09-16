@@ -55,7 +55,7 @@ public class MainActivityFragment extends Fragment {
         class MovieItemHolder {
             ImageView image;
         }
-
+        // Constructor for movie list adapter
         public MovieListAdapter(Context context, int layoutResourceId, ArrayList<MovieItem> movies){
             super(context, layoutResourceId, movies);
             this.layoutResourceId = layoutResourceId;
