@@ -11,6 +11,7 @@ public class MovieDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Setting the movie detail layout for movie detail activity
         setContentView(R.layout.activity_movie_detail);
 
     }
